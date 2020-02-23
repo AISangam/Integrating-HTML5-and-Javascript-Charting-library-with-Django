@@ -5,24 +5,24 @@
     	
     	<style type="text/css">
     			 
-    			 textarea {
-    			 height:120px;
-    			 width:100%; 
-    			 margin-bottom: 15px; 
-                 padding: 7px 10px;
-                 resize: None;
-                 }
+    		textarea {
+    			height:120px;
+    			width:100%; 
+    			margin-bottom: 15px; 
+                        padding: 7px 10px;
+                        resize: None;
+                         }
 
                 textarea {
     			border: 1px solid #0000FF;
 							}
-		</style>					
+	</style>					
 
     </head>
 
     <body>
     	<form method="post" action="">
-            <h3> Please enter text whose tokens(words) you need to count using chart</h3>
+            <h3> Please enter text whose tokens(words) you need to count which are in predefined list using chart</h3>
             {% csrf_token %}
             <textarea name="user_input" placeholder="Write text here"></textarea>    
             <input type="submit" value="Submit">
