@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Count words using chart</title>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    	
+    	<style type="text/css">
+    			 
+    			 textarea {
+    			 height:120px;
+    			 width:100%; 
+    			 margin-bottom: 15px; 
+                 padding: 7px 10px;
+                 resize: None;
+                 }
+
+                textarea {
+    			border: 1px solid #0000FF;
+							}
+		</style>					
+
+    </head>
+
+    <body>
+    	<form method="post" action="">
+            <h3> Please enter text whose tokens(words) you need to count using chart</h3>
+            {% csrf_token %}
+            <textarea name="user_input" placeholder="Write text here"></textarea>    
+            <input type="submit" value="Submit">
+        </form>    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
